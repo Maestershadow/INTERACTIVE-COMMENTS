@@ -5,7 +5,7 @@ import  '../delete_modal/DeleteModal.css';
 import {  useRef } from 'react';
 
 export default function CommentAction( props: {updateValue:()=>void; isEditing: boolean;id:number; setEditId: (id:number)=>void; deleteComment: () => void; isUser: boolean; callback: () => void }) {
-  const passedRef = useRef(null);
+  const passedRef = useRef<HTMLDialogElement>(null);
   
   function openModal()
   {
