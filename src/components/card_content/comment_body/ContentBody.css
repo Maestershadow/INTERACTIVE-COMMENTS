@@ -1,0 +1,22 @@
+.content-comment-box
+{
+   width: 100%;
+   border: 0.1rem solid var(--clr-light-gray);
+   outline: none;
+   fill: none;
+   border-radius: 0.4rem;
+   padding: 0.5rem 1rem;
+   resize: none;
+   color: var(--clr-dark-blue);
+}
+
+.content-comment-box:active
+{
+    border: 0.1rem solid var(--clr-light-grayish-blue); 
+   
+}
+
+.content-comment-box:focus
+{
+     border: 0.1rem solid var(--clr-light-grayish-blue); 
+}

@@ -1,0 +1,65 @@
+
+:root
+{
+    /*--clr-plus-fill:  hsl(238, 40%, 52%); */
+    --clr-plus-fill: #C5C6EF;
+    --clr-minus-fill: #C5C6EF;
+}
+
+.score
+{
+    grid-area: score;
+    background: var(--clr-light-gray);
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: fit-content;
+    margin-right: 1rem;
+}
+
+.score > div
+{
+    height: 1.2rem;
+    width: 1.2rem;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.score > button
+{
+    height: 1.2rem;
+    width: 1.3rem;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+ .score > button:hover
+{
+    --clr-plus-fill:  hsl(238, 40%, 52%);
+    --clr-minus-fill:  hsl(238, 40%, 52%);
+} 
+
+
+@media (max-width: 39em)
+{
+        .score
+        { 
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            justify-content: space-between;
+            height: fit-content;
+            padding: 0.5rem 0.3rem;
+            width: 6rem;
+            margin-top: 1rem;
+        }
+}
+

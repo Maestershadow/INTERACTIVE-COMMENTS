@@ -1,0 +1,67 @@
+
+
+
+.modal {
+  width: 20rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background: white;
+  padding: 1.4rem;
+  max-width: 20rem;
+  border: 0;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1em rgb(0 0 0 / .3); 
+  & > * {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+
+.modal:not([open])
+{
+  display: none;
+}
+
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+
+.modal-heading {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--clr-dark-greyish-blue);
+  opacity: 0.8;
+  margin-bottom: 0.2rem;
+}
+
+.modal-content
+{
+  color: var(--clr-greyish-blue);
+  font-size: 0.875rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn, .cancel-btn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  border: none;
+  color: var(--clr-white);
+  background: var(--clr-greyish-blue);
+}
+
+
+.delete-btn {
+  background:var(--clr-soft-red);
+}

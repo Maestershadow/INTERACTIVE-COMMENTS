@@ -1,0 +1,46 @@
+
+
+.vertical-line
+{
+   height: 100%;
+   width: 1px;
+   background-color:var(--clr-light-grayish-blue);
+   margin-left: 1rem;
+   margin-bottom: 1rem;
+}
+
+@media (max-width: 37em)
+{
+    
+    .vertical-line
+    {
+        margin-left: 0.4rem;
+    }
+}
+
+
+
+.subs
+{
+   display: grid;
+   grid-template-columns: auto auto;
+   max-width: 38rem;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+@media (max-width: 42em)
+{
+    
+    .subs
+    {
+        width: 90vw;
+    }
+}
+
+
+.main-body
+{
+   margin: 1rem;
+}

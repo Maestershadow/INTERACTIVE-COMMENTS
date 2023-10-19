@@ -1,0 +1,110 @@
+.add-comment, .sub-add-comment {
+    display: grid;
+    height: fit-content;
+    width: 38rem;
+    background-color: var(--clr-white);
+    grid-template-areas:
+      "comment-avatar comment-box comment-box comment-button";
+    grid-template-rows: auto;
+    grid-template-columns: 3rem auto 0.8rem 5.5rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--clr-greyish-blue);
+    line-height: 1.3rem;
+    margin-bottom:1rem;
+  }
+
+  .comment-avatar
+  {
+    grid-area: comment-avatar;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+  
+
+
+.sub-add-comment
+{
+    width: 35rem;
+}
+
+
+
+
+
+@media (max-width: 42em)
+{
+    .add-comment
+    {
+        width: 90vw;
+    }
+    .sub-add-comment
+    {
+        width: 83vw;
+    }
+
+}
+
+@media (max-width: 39em)
+{
+    .add-comment, .sub-add-comment {
+        background-color: var(--clr-white);
+        grid-template-areas:
+          "comment-box comment-box comment-box"
+          "comment-avatar ...  comment-button";
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+      }
+
+      .comment-box
+      {
+        margin-bottom: 1rem;
+      }
+}
+
+.comment-box
+{
+   grid-area: comment-box;
+   width: 100%;
+   border: 0.1rem solid var(--clr-light-gray);
+   outline: none;
+   fill: none;
+   border-radius: 0.4rem;
+   padding: 0.5rem 1rem;
+   resize: none;
+   color: var(--clr-dark-blue);
+}
+
+.comment-box:active
+{
+    border: 0.1rem solid var(--clr-light-grayish-blue); 
+   
+}
+
+.comment-box:focus
+{
+     border: 0.1rem solid var(--clr-light-grayish-blue); 
+}
+
+.comment-button
+{
+    grid-area: comment-button;
+    background-color: var(--clr-moderate-blue);
+    color: var(--clr-white);
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: fit-content;
+    padding-inline: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: bold;
+    justify-self: flex-end;
+}
+
+.comment-button:hover
+{
+  opacity: 0.8;
+}

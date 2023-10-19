@@ -1,0 +1,89 @@
+.comment-card
+{
+    width: 38rem;
+    height: fit-content;
+    background-color: var(--clr-white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--clr-greyish-blue);
+    line-height: 1.3rem;
+    display: grid;
+    grid-template-areas: 
+            "score user-details ... comment-action"
+            "score comment-content comment-content comment-content"
+            "score comment-content comment-content comment-content"
+            
+            ;
+    margin-bottom: 1rem;
+    grid-template-columns: 3rem auto auto auto;
+    grid-template-rows: auto;
+}
+
+
+
+.comment-content
+{
+    margin-top: 0.8rem;
+    grid-area: comment-content;
+}
+
+
+
+.sub-card
+{
+    width: 35rem;
+    height: fit-content;
+    background-color: var(--clr-white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--clr-greyish-blue);
+    line-height: 1.3rem;
+    display: grid;
+    grid-template-areas: 
+            "score user-details user-details comment-action"
+            "score comment-content comment-content comment-content"
+            "score comment-content comment-content comment-content";
+    grid-template-columns: 3rem auto auto auto;
+    margin-bottom: 1rem;
+}
+
+
+
+@media (max-width: 42em)
+{
+    .comment-card
+    {
+        width: 90vw;
+    }
+    
+    .sub-card
+    {
+        width: 83vw;
+    }
+}
+
+
+@media (max-width: 39em) {
+    .comment-card
+    {
+        grid-template-areas: 
+        "user-details user-details user-details"
+        "comment-content comment-content comment-content"
+        "score ... comment-action";
+        grid-template-columns: auto;
+    }
+
+    .sub-card
+    {
+        grid-template-areas: 
+        "user-details user-details user-details"
+        "comment-content comment-content comment-content"
+        "score ... comment-action";
+        grid-template-columns: auto;
+    }
+
+   
+   
+}

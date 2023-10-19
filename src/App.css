@@ -1,0 +1,34 @@
+body
+{
+  display: grid;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  fill: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul[role="list"]
+{
+  list-style: none;
+}
+
+.bold
+{
+  font-weight: 700;
+}
+
+.dark-blue-txt
+{
+  color: var(--clr-dark-blue);
+}
+
+.blue-txt
+{
+  color: var(--clr-moderate-blue);
+}

@@ -1,0 +1,26 @@
+.user-details
+{
+   width: fit-content;
+   grid-area: user-details;
+   display: grid;
+   align-items: center;
+   grid-template-columns: auto auto auto auto;
+   gap: 0.8rem;   
+   font-size: 0.9rem;
+}
+
+.avatar
+{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.you
+{
+    background: var(--clr-moderate-blue);
+    padding: 0.1rem 0.4rem;
+    color: var(--clr-white);
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
